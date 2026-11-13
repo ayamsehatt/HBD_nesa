@@ -1,12 +1,5 @@
-// Cursor following effect
-const cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-});
-
 // Typing effect for greeting
-const greetingText = "Hey You Know What! You're the most adorable human i ever met! 💖";
+const greetingText = "Selamat ulang tahunn yang ke 20 Teman kandungkuuuuu😋";
 const greetingElement = document.querySelector('.greeting');
 let charIndex = 0;
 
@@ -19,14 +12,25 @@ function typeGreeting() {
 }
 
 // Create floating elements
-const floatingElements = ['💖', '✨', '🌸', '💫', '💕'];
+const floatingElements = ['🐥', '✨', '🌸', '💫', '🤍','😘'];
 function createFloating() {
     const element = document.createElement('div');
     element.className = 'floating';
-    element.textContent = floatingElements[Math.floor(Math.random() * floatingElements.length)];
+
+    // Sesekali tampilkan foto g4 yang ikut melayang
+    if (Math.random() < 0.15) {
+        const img = document.createElement('img');
+        img.src = './g4.jpg';
+        img.alt = 'Foto';
+        img.className = 'floating-img';
+        element.appendChild(img);
+    } else {
+        element.textContent = floatingElements[Math.floor(Math.random() * floatingElements.length)];
+        element.style.fontSize = (Math.random() * 20 + 20) + 'px';
+    }
+
     element.style.left = Math.random() * 100 + 'vw';
     element.style.top = Math.random() * 100 + 'vh';
-    element.style.fontSize = (Math.random() * 20 + 20) + 'px';
     document.body.appendChild(element);
 
     gsap.to(element, {
@@ -62,7 +66,7 @@ window.addEventListener('load', () => {
     typeGreeting();
 
     // Create floating elements periodically
-    setInterval(createFloating, 1000);
+    setInterval(createFloating, 150);
 });
 
 // Hover effects

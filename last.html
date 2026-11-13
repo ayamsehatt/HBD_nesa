@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Beautiful Memories ✨</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
         * {
             margin: 0;
@@ -121,6 +121,15 @@
             color: rgba(255, 105, 180, 0.6);
             animation: floatHeart var(--float-duration, 6s) ease-in-out infinite;
             animation-delay: var(--delay, 0s);
+        }
+
+        .heart-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            display: block;
         }
 
         @keyframes floatHeart {
@@ -238,7 +247,7 @@
         }
 
         .final-message h2 {
-            font-family: 'Dancing Script', cursive;
+            font-family: 'Quicksand', sans-serif;
             font-size: 3rem;
             color: #ff69b4;
             margin-bottom: 2rem;
@@ -363,46 +372,48 @@
     <div class="magic-sparkles"></div>
     <div class="floating-hearts">
         <!-- Hearts will be generated via CSS -->
-        <div class="heart" style="--float-duration: 6s; --delay: 0s; --translate-x: 20px;">💝</div>
-        <div class="heart" style="--float-duration: 8s; --delay: 1s; --translate-x: -30px;">💖</div>
+        <div class="heart" style="--float-duration: 6s; --delay: 0s; --translate-x: 20px;">🤍</div>
+        <div class="heart" style="--float-duration: 8s; --delay: 1s; --translate-x: -30px;">🐥</div>
         <div class="heart" style="--float-duration: 7s; --delay: 2s; --translate-x: 40px;">💗</div>
-        <div class="heart" style="--float-duration: 9s; --delay: 3s; --translate-x: -20px;">💓</div>
-        <div class="heart" style="--float-duration: 5s; --delay: 4s; --translate-x: 30px;">💕</div>
+        <div class="heart" style="--float-duration: 9s; --delay: 3s; --translate-x: -20px;">😜</div>
+        <div class="heart" style="--float-duration: 5s; --delay: 4s; --translate-x: 30px;">😘</div>
+        <div class="heart" style="left: 15%; --float-duration: 7s; --delay: 5s; --translate-x: -40px;">🌸</div>
+        <div class="heart" style="left: 80%; --float-duration: 8s; --delay: 6s; --translate-x: 25px;">
+            <img src="./g4.jpg" alt="Foto" class="heart-img">
+        </div>
     </div>
 
     <section class="welcome">
-        <h1>Our Beautiful Moments Together</h1>
-        <p>Every moment spent with you has been magical. Let's cherish these precious memories ...</p>
+        <h1>Kenangan</h1>
+        <p>Setiap momen bersamamu adalah kenangan yang tak terlupakan.</p>
     </section>
 
     <div class="memory-container">
         <div class="memory-card">
-            <img src="./d1.jpg" alt="First Date" class="memory-img">
-            <div class="memory-date">Her Smile Says It All</div>
-            <div class="memory-caption">You’re truly one of the sweetest girls I know, and I feel lucky to have a sis
-                like you.❤️</div>
+            <img src="./g3.jpg" alt="First Photo" class="memory-img">
+            <div class="memory-date">Fotbar pertama</div>
+            <div class="memory-caption">nesa yang ajak foto pertamakali btw😘 </div>
         </div>
         <div class="memory-card">
-            <img src="./d2.jpg" alt="Beach Day" class="memory-img">
-            <div class="memory-date">Together Vibes</div>
-            <div class="memory-caption">May your journey ahead be filled with happiness, success, and endless
-                smiles.😊💕</div>
+            <img src="./g2.jpg" alt="Kelulusan SMP" class="memory-img">
+            <div class="memory-date">Kelulusan SMP</div>
+            <div class="memory-caption">Fotbar kelulusan SMP</div>
         </div>
         <div class="memory-card">
-            <img src="./d3.jpg" alt="Movie Night" class="memory-img">
-            <div class="memory-date">Pretty Soul</div>
-            <div class="memory-caption">Keep being the amazing person you are—you make every moment brighter.🌸💖</div>
+            <img src="./g1.jpg" alt="SMA" class="memory-img">
+            <div class="memory-date">Masih SMA</div>
+            <div class="memory-caption">Keliatan plenger yaaaa......</div>
         </div>
 
     </div>
 
     <section class="final-message">
-        <h2>Thank You for the Memories</h2>
-        <p>Every laugh, every chat, and every moment we’ve shared has been truly special.💫<br>
-            I’m so grateful for the bond we have, and for the positivity you always bring into my life.<br>
-            On your birthday, I just wish for endless happiness, love, and success to come your way.🌸</p>
+        <h2>SELAMAT ULANG TAHUN KE-20 NESAAA</h2>
+        <p>Tidak terasa sudah 20 tahun saja, sekarang sudah semakin dewasa semoga menjadi pribadi yang lebih baik lagi.
+            Saya sangat bersyukur bisa menjadi teman muuu, semoga kedepannya selalu menjadi teman yang baik hati dan mood booster.
+            Pada ulang tahun kali ini, saya mendoakan intinya semuanya dilancarkan dan diberikan rezeki yang melimpah.🌸</p>
         <p>You deserve all the joy in the world—keep shining and spreading your beautiful energy.✨</p>
-        <a href="#" class="goodbye-btn">Until We Meet Again 💝</a>
+        <a href="#" class="goodbye-btn">Sehat sehat ya disanaa temankuuu🤍</a>
     </section>
 </body>
 
